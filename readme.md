@@ -1,6 +1,6 @@
 #RsaTools
 
-Some quickly hacked together tools for dumping/rebuilding RSA keys, for use in "Reconstructing RSA Private Keys from Random Key Bits" (http://cseweb.ucsd.edu/~hovav/dist/reconstruction.pdf)
+Some quickly hacked together (poorly written) tools for dumping/rebuilding RSA keys, for use in "Reconstructing RSA Private Keys from Random Key Bits" (http://cseweb.ucsd.edu/~hovav/dist/reconstruction.pdf)
 
 a.out in the below is compiled from http://segher.ircgeeks.net/wak/wak.c (implementation of the algorithm in the above article)
 
