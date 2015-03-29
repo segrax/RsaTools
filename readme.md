@@ -13,12 +13,12 @@ php dump.php private.pem dump_corrupt_pem
 
 php dump.php private.pem | ./a.out | php rebuild.php > private_rebuilt.pem
 
-#####Complete Test
+####Complete Test
 
-######Generate a key
+#####Generate a key
 openssl genrsa -out private.pem 1024
 
-######Dump the corrupted key for a look
+#####Dump the corrupted key for a look
 php dump.php private.pem dump_corrupt_pem
 
 -----BEGIN RSA PRIVATE KEY-----
@@ -37,7 +37,7 @@ AIAACQYABQAGAAAADwACQQDuQAFLyfEdx+D86Y8T8l+4NB+QmD6C2A/7SfnssEO1
 mdSiu6QSVbN7/8P7sgbibV2QhisvQQzIaQxnRyRyT4+B
 -----END RSA PRIVATE KEY-----
 
-######Dump the corrupt key, via a.out, and back into the rebuild script
+#####Dump the corrupt key, via a.out, and back into the rebuild script
 php dump.php private.pem | ./a.out | php rebuild.php
 
 -----BEGIN RSA PRIVATE KEY-----
