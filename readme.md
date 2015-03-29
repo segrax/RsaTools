@@ -20,7 +20,7 @@ openssl genrsa -out private.pem 1024
 
 #####Dump the corrupted key for a look
 php dump.php private.pem dump_corrupt_pem
-
+```
 -----BEGIN RSA PRIVATE KEY-----
 MIICXgIBAAKBgQDbcCnbJ5yZLn+pxjBx7A1Y3E4MeAXo234hqXD69puKz/Ur36+I
 ZMv148MUXdjHJd9QllMz5Or1QTzKmp77RCmxfmNQC0FltyWcI9g9Wn1H5UscDSR/
@@ -36,10 +36,10 @@ ABAAwAAEAAAAgAAAAAAQgAAJAAAPAAAAACAAALANAAcAsAMAAAAAAFAACwAA8AAJ
 AIAACQYABQAGAAAADwACQQDuQAFLyfEdx+D86Y8T8l+4NB+QmD6C2A/7SfnssEO1
 mdSiu6QSVbN7/8P7sgbibV2QhisvQQzIaQxnRyRyT4+B
 -----END RSA PRIVATE KEY-----
-
+```
 #####Dump the corrupt key, via a.out, and back into the rebuild script
 php dump.php private.pem | ./a.out | php rebuild.php
-
+```
 -----BEGIN RSA PRIVATE KEY-----
 MIICHgIBAAKBgQDbcCnbJ5yZLn+pxjBx7A1Y3E4MeAXo234hqXD69puKz/Ur36+I
 ZMv148MUXdjHJd9QllMz5Or1QTzKmp77RCmxfmNQC0FltyWcI9g9Wn1H5UscDSR/
@@ -54,3 +54,4 @@ wDJnezuK5kY70J9umjUgVk6myzW71u8OGD5+Hu6NKqD9JXaOBsmDB09vSPUhAkEA
 33NsForHDQSsDC+HO09zDRGDUfkG+49IgN7WJfCxsT2spym3k4p/3bK4WEpLJ5n1
 y1mjjJ+JlhiVrQZnxlE/SwIA
 -----END RSA PRIVATE KEY-----
+```
